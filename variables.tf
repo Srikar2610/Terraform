@@ -1,9 +1,11 @@
-  variable "my_ami_id" {
-  type = string
-  //default = "ami-0c02fb55956c7d316"
-  }
-  variable "my_instance_type" {
-   type=string
-   //default = "t3.medium"
-  }
- 
+variable "my-ami"{
+    type=string
+    default = ""
+    description="Amazon Machine Image ID"
+}
+variable "my-inst-type" {
+    type = string
+    default = ""
+    description="Instance type"
+  
+}
